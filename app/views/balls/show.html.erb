@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Color:</strong>
+  <%= @ball.color %>
+</p>
+
+<p>
+  <strong>Cat:</strong>
+  <%= @ball.kitten.try(:name) %>
+</p>
+
+<%= link_to 'Edit', edit_ball_path(@ball) %> |
+<%= link_to 'Back', balls_path %>

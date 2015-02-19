@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Kitten:</strong>
+  <%= @meal.kitten_id %>
+</p>
+
+<p>
+  <strong>Done:</strong>
+  <%= @meal.done %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @meal.kind %>
+</p>
+
+<%= link_to 'Edit', edit_meal_path(@meal) %> |
+<%= link_to 'Back', meals_path %>
